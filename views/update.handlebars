@@ -1,0 +1,29 @@
+
+
+<a class="btn-primary btn btn-block" href="./">Thoát</a>
+<div class="container p-3">
+  <div class="row justify-content-around">
+    <form class="col-md-4 bg-light p-3" action="/update" method="POST">
+      <h1 class="text-center text-uppercase h2">Sửa</h1>
+      <div class="from-group">
+        <label for="fullname">Tên:</label>
+        <input class="form-control" type="text" name="ten" value="{{users.ten}}">
+
+      </div>
+
+      <div class="from-group">
+        <label>Tuổi:</label>
+        <input class="form-control" type="text" name="tuoi" value="{{users.tuoi}}">
+      </div>
+
+      <label>Điểm trung bình:</label>
+      <input class="form-control" type="text" name="diemtb" value="{{user.diemtb}}">
+
+      <label>Địa chỉ:</label>
+      <input class="form-control" type="text" name="diachi" value="{{user.diachi}}">
+      <br>
+      <br>
+      <a class="btn-primary btn btn-block" href="./">Lưu</a>
+    </form>
+  </div>
+</div>

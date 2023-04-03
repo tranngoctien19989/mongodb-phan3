@@ -1,0 +1,24 @@
+<h3 class="text-center">Danh sách sinh viên</h3>
+
+<a href="./add" class="btn-primary btn btn-block">Thêm</a>
+<table class="table col-md-4 bg-light p-3">
+  <tr>
+    <th>Tên</th>
+    <th>Tuổi</th>
+    <th>Điểm TB</th>
+    <th>Địa chỉ</th>
+    <th></th>
+    <th></th>
+  </tr>
+
+  {{#each users}}
+  <tr>
+    <td>{{ten}}</td>
+    <td>{{tuoi}}</td>
+    <td>{{diemtb}}</td>
+    <td>{{diachi}}</td>
+    <td ><a class="btn-primary btn btn-block " href="./update">Sửa</a></td>
+    <td ><a class="btn-primary btn btn-block " href="./delete/{{_id}}">Xóa</a></td>
+  </tr>
+  {{/each}}
+</table>
